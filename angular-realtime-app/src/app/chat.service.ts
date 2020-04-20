@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Socket } from 'ngx-socket-io';
-import { Message } from './message';
 import { Observable } from 'rxjs/internal/Observable';
 
 @Injectable({
@@ -15,9 +14,9 @@ export class ChatService {
 
   public getMessages = () => {
     return Observable.create((observer) => {
-      this.socket.on('new-message', (message: Message) => {
+      this.socket.on('new-message', (message: string) => {
         observer.next(message);
       });
     });
-  };
+  }
 }
