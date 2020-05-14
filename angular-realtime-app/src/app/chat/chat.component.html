@@ -1,0 +1,10 @@
+<div *ngFor="let message of messageList" class="chat-messages">
+  <span class="user-name">{{ message.user }}</span> : {{ message.message }}
+</div>
+
+<input matInput
+  class="chat-input"
+  [(ngModel)]="newMessage"
+  (keyup)="$event.keyCode == 13 && sendMessage()"
+/>
+<button mat-button class="chat-button" (click)="sendMessage()">Send Message</button>

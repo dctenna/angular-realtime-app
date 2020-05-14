@@ -1,0 +1,13 @@
+<mat-form-field>
+  <mat-label class="label">Please select your animal</mat-label>
+  <mat-select
+    class="random-animal-select"
+    [formControl]="animalNameControl"
+    (selectionChange)="onSelectionChange($event)"
+    (blur)="onTouched()"
+  >
+    <mat-option *ngFor="let animal of animalsList" [value]="animal">
+      {{ animal }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
