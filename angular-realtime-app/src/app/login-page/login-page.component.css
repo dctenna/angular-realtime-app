@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-button {
+  margin-left: 5px;
+  background-color: lightseagreen;
+}

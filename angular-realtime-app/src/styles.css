@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-select-placeholder {
+  color: black;
+  background-color: white;
+}
+
+.mat-form-field-infix {
+  width: 280px !important;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled),
+.mat-primary .mat-option,
+.mat-primary .mat-option:hover {
+  color: black;
+  background-color: white;
+}
+
+.mat-select-value {
+  color: black;
+}

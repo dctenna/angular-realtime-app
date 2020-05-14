@@ -1,0 +1,7 @@
+<form [formGroup]="loginForm">
+  <app-select-random-animals formControlName="animalName"></app-select-random-animals>
+
+  <button mat-button (click)="login()" [disabled]="!loginForm.valid">Login</button>
+</form>
+
+<router-outlet><router-outlet> </router-outlet></router-outlet>

@@ -1,0 +1,16 @@
+.user-name {
+  color: blueviolet;
+}
+
+.chat-button {
+  margin: 15px;
+  background-color: coral;
+}
+
+.chat-input {
+  margin: 15px;
+}
+
+.chat-messages {
+  margin: 15px;
+}
