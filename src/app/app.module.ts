@@ -15,7 +15,7 @@ import { SelectRandomAnimalsComponent } from './login-page/select-random-animals
 import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
-const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
+const config: SocketIoConfig = { url: 'http://tanya-nodejs-chat.herokuapp.com/', options: {} };
 
 @NgModule({
   declarations: [
